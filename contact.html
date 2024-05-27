@@ -1,0 +1,103 @@
+<!doctype html>
+<html lang="en">   
+<head>
+    <title>Busy Bee Florist</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://fonts.googleapis.com/css2?family=Caveat&family=Francois+One&family=Roboto+Slab:wght@100&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Francois+One&display=swap" rel="stylesheet">   
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="script.js"></script>
+</head>
+<body>
+    <div id="Bee logo">
+        <header>
+            <a href="index.html"> <img src="florist images/AdobeStock_401695850.jpeg" 
+                alt="Busy Bee Florist logo"> </a> 
+        </header>
+    
+        <nav>
+            <ul> 
+                <li><a href ="index.html">Home</a></li> 
+                <li><a href ="about.html">About US</a></li> 
+                <li><a href = "picture.html">Some Picture of our product</a></li>
+                <li><a href ="contact.html">Contact Us</a> </li>
+                </ul>
+        </nav>
+    </div>
+
+
+    <main>
+        <div id="White Rose" class="White-Rose">
+            <img src="florist images/AdobeStock_258430254.jpeg" alt="White Rose">
+        </div>
+        
+        <div class="contact">
+            <ul>
+                <p><a href="tel:+10747791243">Phone: 07 4779 1243</a></p>
+                <p><a href="tel:+10747791244">Fax: 07 4779 1244</a></p>
+                <p><a href="mailto:forwardfitness@club.net">Email: busybeeflorist@busybeemail.com.au</a></p>
+            </ul>
+        </div>
+        <div class="clear"></div>
+
+        <div id="form">
+            <h2>Complete the form to let us know more about you</h2>
+            <form class="form-grid" action="submit.html" onsubmit="return validateForm()">
+
+            <fieldset>  
+                <legend>Customer Information</legend>
+                <label for="fName">First Name:</label>
+                <input type="text" name= "fName" id= "fName">
+            
+                <label for="lName">Last Name:</label>
+                <input type="text" name= "lName" id= "lName">
+
+                <label for="email">Email:</label>
+		        <input type="email" name= "email" id= "email">
+						
+		        <label for="phone">Phone: </label> 
+		        <input type="tel"  name= "phone" id= "phone">   
+            </fieldset>
+
+            <fieldset>
+                <legend>Additional Information</legend>
+                <p>I would like more information about:</p>
+                
+                <label for="grpfit"><input type="checkbox" name="interest" id="grpfit" value="Product">Product</label>
+                
+                <label for="prtrain"><input type="checkbox" name="interest" id="prtrain" value="Price">Price</label>
+                
+                <label for="nutr"><input type="checkbox" name="interest" id="nutr" value="Valid Information">Valid Information</label>
+            </fieldset>
+            
+            <fieldset>
+                <legend>Referral Source</legend>
+                <label for="reference">How did you find us?</label>
+                <select name="reference" id="reference">
+                    <option value="ad">Advertisement</option>
+                    <option value="friend">Friend</option>
+                    <option value="google">Google</option>   
+                    <option value="social">Social Media</option>
+                    <option value="other">Other</option>
+                </select>
+
+                <label for="questions"> Questions?</label>
+                <textarea id="questions"  name="questions" rows="5" cols="35"></textarea>
+
+            </fieldset>
+                <input type="submit" id="submit" value ="Submit" class="btn">
+            </form>  
+            </div>
+    </main>
+
+    <footer><br>
+        <p><a href="Adress">Address: 223 Bolsover St in Cairville, Queensland</a></p>
+        <p><a href="mailto:forwardfitness@club.net">Email: busybeeflorist@busybeemail.com.au</a></p>
+    </footer>
+    </div>
+
+</body>
+</html>
